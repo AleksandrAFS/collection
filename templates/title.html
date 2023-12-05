@@ -1,0 +1,19 @@
+{% extends 'body.html'%} {% block style %} {{url_for('static',
+filename='css/styles.css')}} {% endblock%} {%block body%}
+<div class="create">
+  <form action="/title" method="post">
+    <p>
+      <label style="margin-right: 3px; color: rgb(56, 228, 3)">collection</label
+      ><input type="text" name="collection" value="" />
+    </p>
+    <p>
+      <label style="margin-right: 5px; color: rgb(56, 228, 3)">password</label
+      ><input type="password" name="password" value="" />
+      {% if error%}<p style="color: red">{{error}}</p>{% endif%}
+    </p>
+    <p><input type="submit" class="main 
+      {%- if error%} ncurrect {% else %} ycurrect {%endif-%}
+      " value="send" /></p>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,80 @@
+.naving {
+  position: sticky;
+  top: 0;
+  scroll-margin-top: 1em;
+  border-style: solid;
+  border-width: 1px;
+  height: 53px;
+  background-color: black;
+}
+
+.but {
+  width: 100px;
+  height: 25px;
+  border-radius: 7px;
+  background-color: rgb(49, 238, 49);
+}
+
+body {
+  margin: 0px;
+}
+
+a > button {
+  margin-right: 20px;
+}
+.now {
+  border-color:azure;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.create {
+  overflow: hidden;
+  margin-left: 813px;
+  width: 270px;
+  border-style: solid;
+  height: 180px;
+  padding-left: 5px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  scroll-margin-top: 1em;
+
+}
+
+.main {
+  background-color: red;
+  border-radius: 10%;
+  width: 60px;
+  margin-left: 200px;
+  color: rgb(56, 228, 3);
+  pointer-events: auto;
+  cursor: pointer;
+  text-align: center;
+}
+
+.main:hover {
+  background-color: grey;
+}
+
+.main:active {
+  background-color: grey;
+  transform: translateY(2px);
+}
+
+.ycurrect {
+  margin-top: 50px;
+}
+
+.ncurrect {
+  margin-top: 15px;
+}
+
+.collection {
+  margin-right: auto;
+  margin-left: auto;
+  color: rgb(56, 228, 3);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>steps</title>
+    <link rel="stylesheet" href="{%block style%}{% endblock %}" />
+    {% block head %}{% endblock %}
+  </head>
+  <body>
+    <div class="naving">
+      <ul>
+        <li>
+          <a
+            href="https://github.com/AleksandrAFS"
+            alt="разработчик"
+            target="_blank"
+          >
+        </li>
+        <li>
+            <img
+              src="{{url_for('static',
+              filename='info/tag.jpg')}}"
+              style="height: 30px; width: 55px; margin-right: 60px;"
+            />
+          </a>
+        </li>
+        {%- for index, name in last %}
+        <li>
+          <a href="{{name}}" alt="{{name}}" target="_top">
+            <button
+              class="but {%- if index == digit %} now{% endif -%}"
+            ></button>
+          </a>
+        </li>
+        {%- endfor %}
+        <li class="collection">{% if base %}{{base}}{%else%}Uncertain{%endif%}</li>
+      </ul>
+    </div>
+    {% block body%}{% endblock %}
+  </body>
+</html>
